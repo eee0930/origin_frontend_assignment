@@ -27,7 +27,10 @@ const BoxTitle = styled.div`
   color: ${(props) => props.theme.$blueGray900};
 `;
 const TotalAmountBox = styled(ContentBox)`
-  width: 272px;
+  width: 272px !important;
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
 `;
 const FormEleBox = styled.div`
   border: 1px solid ${(props) => props.theme.$blueGray50};
