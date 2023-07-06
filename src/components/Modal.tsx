@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import TotalAmount from './TotalAmount';
+import MonthlyAmount from './MonthlyAmount';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 const ModalContainer = styled.div`
@@ -14,6 +15,11 @@ const ModalContainer = styled.div`
   padding: 32px 40px;
   margin: 10px auto;
   box-shadow: 0px 16px 32px #1e2a3214;
+
+  @media (max-width: 768px) {
+    top: 134px;
+    padding: 24px;
+  }
 `;
 const ModalHeader = styled.div`
   padding: 5px;
@@ -52,6 +58,26 @@ const SubTitle = styled.div`
   color: ${(props) => props.theme.$blueGray400};
   font-family: 'Work Sans';
   line-height: 24px;
+`;
+const ButtonSection = styled.div`
+  margin-top: 25px;
+  text-align: center;
+  @media (max-width: 768px) {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+`;
+const ConformButton = styled.button`
+  border-radius: 32px;
+  height: 56px;
+  width: 320px;
+  background-color: ${(props) => props.theme.$brandColorPrimary};
+  border: none;
+  font-family: 'Work Sans';
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 16px;
+  color: ${(props) => props.theme.$neutralWhite};
 `;
 
 function Modal() {
@@ -164,6 +190,10 @@ function Modal() {
         </TitleSection>
       </ModalHeader>
       <TotalAmount />
+      <MonthlyAmount />
+      <ButtonSection>
+        <ConformButton>Confirm</ConformButton>
+      </ButtonSection>
     </ModalContainer>
   );
 }

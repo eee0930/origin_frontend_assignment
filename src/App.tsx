@@ -9,7 +9,7 @@ const BackgroundContainer = styled.div`
 const Title = styled.h3`
   width: 400px;
   position: absolute;
-  top: 128px;
+  top: 120px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -20,6 +20,9 @@ const Title = styled.h3`
   font-family: Work Sans;
   span {
     font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    top: 88px;
   }
 `;
 

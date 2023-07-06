@@ -10,5 +10,7 @@ declare module 'styled-components' {
     $blueGray400: string;
     $blueGray50: string;
     $blueGray600: string;
+    $blueGray10: string;
+    $brandColorSecondary: string;
   }
 }

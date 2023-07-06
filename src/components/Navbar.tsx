@@ -13,20 +13,17 @@ const NavBarSection = styled.nav`
 `;
 const Svg = styled.svg`
   width: 100px;
+  height: 32px;
   @media (max-width: 768px) {
     width: 75px;
+    height: 24px;
   }
 `;
 
 function Navbar() {
   return (
     <NavBarSection>
-      <Svg
-        width="100"
-        fill="#000"
-        height="32"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <Svg fill="#000" xmlns="http://www.w3.org/2000/svg">
         <g clipPath="url(#clip0_14_1047)">
           <path
             fillRule="evenodd"

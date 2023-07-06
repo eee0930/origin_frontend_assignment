@@ -7,4 +7,6 @@ export const lightTheme: DefaultTheme = {
   $blueGray400: '#708797',
   $blueGray50: '#E9EEF2',
   $blueGray600: '#4D6475',
+  $blueGray10: '#F4F8FA',
+  $brandColorSecondary: '#0079FF',
 };
